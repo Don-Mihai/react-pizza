@@ -43,7 +43,7 @@ body {
 
   &--cart {
     max-width: 820px;
-    margin: 90px auto;
+    margin: 0 auto;
     .content__title {
       margin: 0;
     }
@@ -70,7 +70,7 @@ body {
       margin-right: 10px;
       path {
         stroke: $black;
-        stroke-width: 1.9;
+        strokewidth: 1.9;
       }
     }
   }
@@ -259,7 +259,7 @@ body {
           margin-right: 12px;
           path {
             fill: transparent;
-            stroke-width: 2;
+            strokewidth: 2;
           }
         }
       }
