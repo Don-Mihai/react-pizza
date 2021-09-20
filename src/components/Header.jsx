@@ -5,12 +5,12 @@ import logo from '../assets/img/pizza-logo.svg';
 import { useSelector } from 'react-redux';
 
 function Header() {
-  const { totalPrice, itemsCount } = useSelector(({ cart }) => cart);
+  const { totalPrice, totalCount } = useSelector(({ cart }) => cart);
 
   return (
     <div className="header">
       <div className="container">
-        <Link to="">
+        <Link to="/">
           <div className="header__logo">
             <img width="38" src={logo} alt="Pizza logo" />
             <div>
@@ -53,7 +53,7 @@ function Header() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span>{itemsCount}</span>
+              <span>{totalCount}</span>
             </Button>
           </Link>
         </div>
