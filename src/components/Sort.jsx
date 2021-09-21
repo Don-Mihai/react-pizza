@@ -15,9 +15,10 @@ const sort = React.memo(function Sort({ items, activeSort, onClickSort }) {
   }, []);
 
   return (
-    <div ref={sortRef} className="sort">
+    <div ref={sortRef} className="sort" onClick={() => setTogle(!togle)}>
       <div className="sort__label">
         <svg
+          className={!togle ? 'rotate' : ''}
           width="10"
           height="6"
           viewBox="0 0 10 6"
@@ -29,9 +30,7 @@ const sort = React.memo(function Sort({ items, activeSort, onClickSort }) {
           />
         </svg>
         <b>Сортировка по:</b>
-        <span onClick={() => setTogle(!togle)}>
-          {items.find((obj) => obj.type === activeSort).name}
-        </span>
+        <span>{items.find((obj) => obj.type === activeSort).name}</span>
       </div>
       {togle && (
         <div className="sort__popup">
