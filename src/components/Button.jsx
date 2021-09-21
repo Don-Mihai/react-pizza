@@ -1,7 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 
-function Button({ className, href, children, outline, onClick }) {
+const Button = React.memo(function Button({
+  className,
+  href,
+  children,
+  outline,
+  onClick,
+}) {
   return (
     <button
       onClick={onClick}
@@ -12,6 +18,6 @@ function Button({ className, href, children, outline, onClick }) {
       {children}
     </button>
   );
-}
+});
 
 export default Button;

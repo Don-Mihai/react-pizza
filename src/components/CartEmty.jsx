@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import imgEmty from '../assets/img/empty-cart.png';
 
-export default function CartEmty() {
+const CartEmty = React.memo(function CartEmty() {
   return (
-    <div class="cart cart--empty">
+    <div className="cart cart--empty">
       <h2>
         Корзина пустая <icon>😕</icon>
       </h2>
@@ -14,9 +14,11 @@ export default function CartEmty() {
         Для того, чтобы заказать пиццу, перейди на главную страницу.
       </p>
       <img src={imgEmty} alt="Empty cart" />
-      <Link to="/" class="button button--black">
+      <Link to="/" className="button button--black">
         <span>Вернуться назад</span>
       </Link>
     </div>
   );
-}
+});
+
+export default CartEmty;

@@ -18,7 +18,7 @@ const sortItems = [
   { name: 'алфавиту', type: 'name' },
 ];
 
-export default function Home() {
+const Home = React.memo(function Home() {
   const dispatch = useDispatch();
   const items = useSelector(({ pizzas }) => pizzas.items);
   const cartItems = useSelector(({ cart }) => cart.items);
@@ -38,9 +38,9 @@ export default function Home() {
     dispatch(setSortBy(name));
   }, []);
 
-  const handleAddPizza = (obj) => {
+  const handleAddPizza = React.useCallback((obj) => {
     dispatch(addPizzaToCart(obj));
-  };
+  }, []);
 
   return (
     <div className="container">
@@ -73,4 +73,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+});
+
+export default Home;

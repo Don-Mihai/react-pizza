@@ -4,7 +4,7 @@ import Button from '../Button';
 
 // import PropTypes from 'prop-types';
 
-export default function PizzaBlock({
+const PizzaBlock = React.memo(function PizzaBlock({
   id,
   name,
   imageUrl,
@@ -94,7 +94,9 @@ export default function PizzaBlock({
       </div>
     </div>
   );
-}
+});
+
+export default PizzaBlock;
 
 // PizzaBlock.propTypes = {
 //   name: PropTypes.string.isRequired,
