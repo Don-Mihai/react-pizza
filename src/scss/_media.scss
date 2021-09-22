@@ -1,0 +1,46 @@
+@media (max-width: 1180px) {
+  .categories {
+    ul {
+      li {
+        padding: 8px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .categories {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .content {
+    &__items {
+      justify-content: center !important;
+    }
+  }
+  .button--cart {
+    padding: 8px 15px;
+  }
+  .header {
+    &__logo {
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .cart {
+    &__top {
+      justify-content: center !important;
+    }
+  }
+  .content .button--cart {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+  }
+}
