@@ -1,4 +1,14 @@
 @media (max-width: 1180px) {
+  .pizza-block {
+    margin-right: 0;
+  }
+
+  .content {
+    &__items {
+      justify-content: space-between !important;
+    }
+  }
+
   .categories {
     ul {
       li {
@@ -11,6 +21,9 @@
 @media (max-width: 970px) {
   .categories {
     margin-bottom: 20px;
+  }
+  .pizza-block {
+    margin-right: 0;
   }
 }
 
