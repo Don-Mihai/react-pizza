@@ -10,7 +10,7 @@ export default function LoadingBlock() {
       viewBox="0 0 280 457"
       backgroundColor="#f3f3f3"
       foregroundColor="#ecebeb">
-      <circle cx="140" cy="140" r="140" />
+      <circle cx="120" cy="120" r="120" />
     </ContentLoader>
   );
 }
