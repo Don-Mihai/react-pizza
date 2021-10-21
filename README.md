@@ -1,1 +1,1 @@
-# ReactJS(hooks) + Redux + axios + router
+# ReactJS(hooks) + Redux + axios + router + thunk + content-loader
