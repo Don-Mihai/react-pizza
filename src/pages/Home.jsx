@@ -59,7 +59,7 @@ const Home = React.memo(function Home() {
       <h2 className="content__title">Все пиццы</h2>
       <div className="content__items">
         {isLoaded
-          ? items.map((obj) => (
+          ? items?.map((obj) => (
               <PizzaBlock
                 onClickAddPizza={handleAddPizza}
                 addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
